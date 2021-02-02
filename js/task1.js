@@ -27,11 +27,9 @@ let arr = [{
 
 function addShoppingListItem() {
     const item = document.getElementById('item').value;
+    if (item.length !== 0 || item.trim() === "") return;
     const index = arr.findIndex(oldItem => oldItem.name === item.toLowerCase());
 
-    // function isNumeric(item) {
-    //     return !isNaN(item) && (!!item || item !== 0) && item.trim() !== "";
-    // }
 
     if (index !== -1) {
         arr[index].count++;
