@@ -44,11 +44,15 @@
             <input type="text" id="product" placeholder="Enter a name of product" />
             <input type="text" id="count" placeholder="Enter quantity" />
             <input type="text" id="price" placeholder="Enter the unit price" />
-            <button onclick="addToCart()">Add to cart</button>
-            <ul id="bill"></ul>
-            <p id="sum"></p>
-            <p id="theMostExpensive"></p>
-            <p id="average"></p>
+            <button onclick="addProduct()">Add to cart</button>
+            <div id="task2">
+                <ul id="bill"></ul>
+                <div id="resume">
+                    <p id="sum"></p>
+                    <p id="theMostExpensive"></p>
+                    <p id="average"></p>
+                </div>
+            </div>
         </section>
 
         <section class="task">
@@ -72,6 +76,7 @@
         </section>
 
         <script src="./js/task1.js"></script>
+        <script src="./js/task2.js"></script>
     </div>
 </body>
 
